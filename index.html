@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <div class="left-section">
+            <img src="./utils/img/plain.jpg" alt="Wing View" class="background-image">
+            <div class="overlay">
+                <h1>Altitude Air</h1>
+                <p>
+                    We promise to ensure that your well-being is taken care of while traveling with us. Boasting 
+                    top-in-class fleet inventory and a 5-star approval for our in-flight experience, you know you’re 
+                    getting the best from Altitude with no attitude.
+                </p>
+            </div>
+        </div>
+        <div class="right-section">
+                
+            <form id="registrationForm">
+                <div class="toggle-container">
+                    <button type="button" id="showSignInBtn" class="toggle-btn">Sign In</button>
+                </div>
+                <h2>Explore & Experience</h2>
+                <p style="color: #4e2fa6; font-weight: 550;">Get onto your most comfortable journey yet. All the way up.</p>
+                <div class="input-group">
+                    <input type="text" id="firstName" placeholder="First Name" required>
+                    <input style="margin-right: -20px;" type="text" id="lastName" placeholder="Last Name" required>
+                </div>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                <button type="submit" class="btn">GET STARTED</button>
+
+                
+            </form>
+          
+      <!-- Sign In Form -->
+      <form id="signInForm" class="hidden-form">
+        <div class="toggle-container" >
+            <button type="button" id="showRegisterBtn" class="toggle-btn active">Register</button>
+        </div>
+        <h2>Welcome Back</h2>
+        <p style="color: #4e2fa6; font-weight: 550;">Log in to continue your journey.</p>
+        <input type="email" id="signInEmail" placeholder="Email" required>
+        <input type="password" id="signInPassword" placeholder="Password" required>
+        <button type="submit" class="btn">Sign In</button>
+    </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

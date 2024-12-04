@@ -1,0 +1,198 @@
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.85rem;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.left-section {
+    width: 50%;
+    position: relative;
+    background-color: #f4f4f9;
+}
+
+.background-image {
+    width: 100%;
+    height: 98%;
+    object-fit: cover;
+    padding-left: 15px;
+    /* padding-bottom: 15px; */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    display: inline-grid;
+    justify-items: center;
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+}
+
+form {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #4e2fa6;
+    margin-bottom: 10px;
+    display: flex;
+    font-size: xx-large;
+    font-weight: 750;
+}
+
+p {
+    color: gray;
+    margin-bottom: 20px;
+}
+
+
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4e2fa6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 106%;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #3c2381;
+}
+
+.sign-in-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.sign-in-btn {
+    background-color: transparent;
+    color: #4e2fa6;
+    border: 1px solid #4e2fa6;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.sign-in-btn:hover {
+    background-color: #4e2fa6;
+    color: white;
+}
+
+/* //////// */
+.toggle-container {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.sign-in-btn, .register-btn {
+    background-color: transparent;
+    color: #4e2fa6;
+    border: 1px solid #4e2fa6;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.sign-in-btn.active, .register-btn.active {
+    background-color: #4e2fa6;
+    color: white;
+}
+
+/* /////2 */
+.hidden-form {
+    display: none;
+}
+
+.active-form {
+    display: block;
+}
+
+.toggle-btn {
+    background-color: transparent;
+    color: #4e2fa6;
+    border: 1px solid #4e2fa6;
+    padding: 5px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    width: auto;
+    height: auto;
+}
+
+.toggle-btn.active {
+    background-color: #4e2fa6;
+    color: white;
+}
+ 
